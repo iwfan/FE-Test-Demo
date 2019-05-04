@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './index.css';
 
-const endPoint = 'https://gist.githubusercontent.com/soyaine/81399bb2b24ca1bb5313e1985533c640/raw/bdf7df2cbcf70706c4a5e51a7dfb8c933ed78878/TangPoetry.json'
+export const endPoint = 'https://gist.githubusercontent.com/soyaine/81399bb2b24ca1bb5313e1985533c640/raw/bdf7df2cbcf70706c4a5e51a7dfb8c933ed78878/TangPoetry.json'
 
 
 export const debounce = (fn, time) => {
@@ -33,8 +33,8 @@ class AutoComplete extends React.PureComponent {
 
         }
 
-        // this.onKeywordChange = debounce(this.onKeywordChange, 300).bind(this);
-        this.onKeywordChange = this.onKeywordChange.bind(this);
+        this.onKeywordChange = debounce(this.onKeywordChange, 300).bind(this);
+        // this.onKeywordChange = this.onKeywordChange.bind(this);
     }
 
     componentDidMount() {

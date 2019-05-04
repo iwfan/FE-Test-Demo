@@ -7,7 +7,9 @@
     "test": "jest --detectOpenHandles",
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "test:unit": "mocha --require @babel/register --require ./test/helpers.js --require ./test/dom.js  --require ignore-styles '__test__/**/*.unit.js'",
-    "test:unit:watch": "npm run test:unit -- --watch"
+    "test:unit:watch": "npm run test:unit -- --watch",
+    "test:cypress": "cypress run",
+    "test:cypress:open": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,7 @@
     "babel-loader": "^8.0.5",
     "chai": "^4.2.0",
     "css-loader": "^2.1.1",
+    "cypress": "^3.2.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
     "ignore-styles": "^5.0.1",

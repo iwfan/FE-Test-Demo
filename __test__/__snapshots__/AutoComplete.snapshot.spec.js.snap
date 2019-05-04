@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`As a AutoComplete Component should match snapshot 1`] = `
+<form
+  className="search-form"
+>
+  <input
+    className="search"
+    onChange={[Function]}
+    onInput={[Function]}
+    placeholder="诗名 诗句 诗人"
+    type="text"
+  />
+  <ul
+    className="suggestions"
+  >
+    <li>
+      搜索一首诗
+    </li>
+    <li>
+      或一个诗人
+    </li>
+  </ul>
+</form>
+`;
